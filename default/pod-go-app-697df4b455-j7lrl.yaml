@@ -1,0 +1,77 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2023-11-02T06:50:24Z"
+  generateName: go-app-697df4b455-
+  labels:
+    app: go-app
+    pod-template-hash: 697df4b455
+  name: go-app-697df4b455-j7lrl
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: go-app-697df4b455
+    uid: 3c3860ef-983e-4f62-a807-7fa6ee67c3ab
+spec:
+  containers:
+  - image: sharmag07/url-short:a2
+    imagePullPolicy: IfNotPresent
+    name: go-app
+    ports:
+    - containerPort: 8090
+      protocol: TCP
+    resources:
+      limits:
+        cpu: 800m
+        memory: 128Mi
+      requests:
+        cpu: 800m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-wsbtf
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: minikube
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: kube-api-access-wsbtf
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
