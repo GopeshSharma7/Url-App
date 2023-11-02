@@ -5,8 +5,8 @@ metadata:
   name: f4bd82be.demo.kcd.io
   namespace: project-system
 spec:
-  acquireTime: "2023-11-02T08:16:02.874223Z"
-  holderIdentity: project-controller-manager-649894599c-kz855_650f80fa-23ae-418d-bacd-28bc173b3360
+  acquireTime: "2023-11-02T08:23:23.032319Z"
+  holderIdentity: project-controller-manager-649894599c-kz855_9ee2641f-58b6-4cb1-b113-f433d74b30fe
   leaseDurationSeconds: 15
-  leaseTransitions: 392
-  renewTime: "2023-11-02T08:18:01.926457Z"
+  leaseTransitions: 393
+  renewTime: "2023-11-02T08:23:25.070284Z"
