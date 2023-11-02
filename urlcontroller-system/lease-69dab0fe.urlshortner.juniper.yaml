@@ -9,4 +9,4 @@ spec:
   holderIdentity: urlcontroller-controller-manager-6584756fdd-w4ws2_5cd20e3d-2933-46b2-9183-0ab5134ce52c
   leaseDurationSeconds: 15
   leaseTransitions: 750
-  renewTime: "2023-11-02T08:31:14.410135Z"
+  renewTime: "2023-11-02T08:31:24.484238Z"
