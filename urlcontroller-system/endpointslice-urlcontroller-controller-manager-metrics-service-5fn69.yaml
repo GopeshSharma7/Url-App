@@ -4,8 +4,8 @@ endpoints:
 - addresses:
   - 10.244.0.81
   conditions:
-    ready: false
-    serving: false
+    ready: true
+    serving: true
     terminating: false
   nodeName: minikube
   targetRef:
@@ -16,7 +16,7 @@ endpoints:
 kind: EndpointSlice
 metadata:
   annotations:
-    endpoints.kubernetes.io/last-change-trigger-time: "2023-11-02T08:54:16Z"
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-11-02T08:59:41Z"
   creationTimestamp: "2023-10-11T06:22:25Z"
   generateName: urlcontroller-controller-manager-metrics-service-
   labels:
