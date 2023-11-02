@@ -1,8 +1,19 @@
-apiVersion: v1
-count: 4222
+apiVersion: events.k8s.io/v1
+deprecatedCount: 4238
+deprecatedFirstTimestamp: "2023-10-27T08:19:49Z"
+deprecatedLastTimestamp: "2023-11-02T09:06:00Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
 eventTime: null
-firstTimestamp: "2023-10-27T08:19:49Z"
-involvedObject:
+kind: Event
+metadata:
+  creationTimestamp: "2023-10-30T04:27:09Z"
+  name: project-controller-manager-649894599c-kz855.1791e9101e0900d7
+  namespace: project-system
+note: Back-off restarting failed container manager in pod project-controller-manager-649894599c-kz855_project-system(c7434802-c595-4701-add6-57cd5e14fdfb)
+reason: BackOff
+regarding:
   apiVersion: v1
   fieldPath: spec.containers{manager}
   kind: Pod
@@ -10,17 +21,4 @@ involvedObject:
   namespace: project-system
   resourceVersion: "671799"
   uid: c7434802-c595-4701-add6-57cd5e14fdfb
-kind: Event
-lastTimestamp: "2023-11-02T09:02:54Z"
-message: Back-off restarting failed container manager in pod project-controller-manager-649894599c-kz855_project-system(c7434802-c595-4701-add6-57cd5e14fdfb)
-metadata:
-  creationTimestamp: "2023-10-30T04:27:09Z"
-  name: project-controller-manager-649894599c-kz855.1791e9101e0900d7
-  namespace: project-system
-reason: BackOff
-reportingComponent: ""
-reportingInstance: ""
-source:
-  component: kubelet
-  host: minikube
 type: Warning
