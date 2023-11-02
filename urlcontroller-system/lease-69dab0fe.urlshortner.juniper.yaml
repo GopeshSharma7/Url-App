@@ -5,8 +5,8 @@ metadata:
   name: 69dab0fe.urlshortner.juniper
   namespace: urlcontroller-system
 spec:
-  acquireTime: "2023-11-02T07:23:02.225063Z"
-  holderIdentity: urlcontroller-controller-manager-6584756fdd-w4ws2_0490b771-3af4-4a09-8c93-5d7975b99f56
+  acquireTime: "2023-11-02T07:30:23.898197Z"
+  holderIdentity: urlcontroller-controller-manager-6584756fdd-w4ws2_8f007c61-75b9-461a-b453-9f4b1e154359
   leaseDurationSeconds: 15
-  leaseTransitions: 741
-  renewTime: "2023-11-02T07:25:01.430073Z"
+  leaseTransitions: 742
+  renewTime: "2023-11-02T07:30:23.905669Z"
