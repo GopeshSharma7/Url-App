@@ -1,0 +1,25 @@
+apiVersion: v1
+count: 1
+eventTime: null
+firstTimestamp: "2023-11-02T08:53:21Z"
+involvedObject:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: f4bd82be.demo.kcd.io
+  namespace: project-system
+  resourceVersion: "769482"
+  uid: 973b25ad-2cd6-466e-b070-2a5c5914f8ec
+kind: Event
+lastTimestamp: "2023-11-02T08:53:21Z"
+message: project-controller-manager-649894599c-kz855_6b5c84e2-d0a1-4768-b031-782e0fbe9750
+  became leader
+metadata:
+  creationTimestamp: "2023-11-02T08:53:21Z"
+  name: f4bd82be.demo.kcd.io.1793c25fd670bad6
+  namespace: project-system
+reason: LeaderElection
+reportingComponent: project-controller-manager-649894599c-kz855_6b5c84e2-d0a1-4768-b031-782e0fbe9750
+reportingInstance: ""
+source:
+  component: project-controller-manager-649894599c-kz855_6b5c84e2-d0a1-4768-b031-782e0fbe9750
+type: Normal
