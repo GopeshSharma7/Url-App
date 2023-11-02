@@ -1,0 +1,23 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    meta.helm.sh/release-name: katafygio
+    meta.helm.sh/release-namespace: default
+  creationTimestamp: "2023-10-26T08:14:20Z"
+  labels:
+    app: katafygio
+    app.kubernetes.io/managed-by: Helm
+    chart: katafygio-0.5.1
+    heritage: Helm
+    release: katafygio
+  name: katafygio
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - '*'
+  verbs:
+  - get
+  - list
+  - watch

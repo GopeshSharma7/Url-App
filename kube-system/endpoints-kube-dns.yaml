@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-09-01T13:06:14Z"
+  creationTimestamp: "2023-09-01T13:06:28Z"
+  labels:
+    k8s-app: kube-dns
+    kubernetes.io/cluster-service: "true"
+    kubernetes.io/name: CoreDNS
+  name: kube-dns
+  namespace: kube-system
+subsets:
+- addresses:
+  - ip: 10.244.0.84
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: coredns-5d78c9869d-tm77f
+      namespace: kube-system
+      uid: 55e0e3c9-3c23-4b06-a46b-25d269e9736c
+  ports:
+  - name: dns-tcp
+    port: 53
+    protocol: TCP
+  - name: dns
+    port: 53
+    protocol: UDP
+  - name: metrics
+    port: 9153
+    protocol: TCP
