@@ -1,0 +1,25 @@
+apiVersion: v1
+count: 1
+eventTime: null
+firstTimestamp: "2023-11-02T08:29:53Z"
+involvedObject:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: 69dab0fe.urlshortner.juniper
+  namespace: urlcontroller-system
+  resourceVersion: "767858"
+  uid: df537228-fad1-4aa0-b7b1-16a00f26f8d1
+kind: Event
+lastTimestamp: "2023-11-02T08:29:53Z"
+message: urlcontroller-controller-manager-6584756fdd-w4ws2_5cd20e3d-2933-46b2-9183-0ab5134ce52c
+  became leader
+metadata:
+  creationTimestamp: "2023-11-02T08:29:53Z"
+  name: 69dab0fe.urlshortner.juniper.1793c11817311a4a
+  namespace: urlcontroller-system
+reason: LeaderElection
+reportingComponent: urlcontroller-controller-manager-6584756fdd-w4ws2_5cd20e3d-2933-46b2-9183-0ab5134ce52c
+reportingInstance: ""
+source:
+  component: urlcontroller-controller-manager-6584756fdd-w4ws2_5cd20e3d-2933-46b2-9183-0ab5134ce52c
+type: Normal
