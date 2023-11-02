@@ -1,24 +1,22 @@
-apiVersion: v1
-count: 1
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-11-02T06:50:24Z"
+deprecatedLastTimestamp: "2023-11-02T06:50:24Z"
+deprecatedSource:
+  component: deployment-controller
 eventTime: null
-firstTimestamp: "2023-11-02T06:50:24Z"
-involvedObject:
+kind: Event
+metadata:
+  creationTimestamp: "2023-11-02T06:50:24Z"
+  name: go-app.1793bbaa5de67406
+  namespace: default
+note: Scaled up replica set go-app-697df4b455 to 1
+reason: ScalingReplicaSet
+regarding:
   apiVersion: apps/v1
   kind: Deployment
   name: go-app
   namespace: default
   resourceVersion: "761062"
   uid: e4f66a27-c56d-431d-a506-d920c0587721
-kind: Event
-lastTimestamp: "2023-11-02T06:50:24Z"
-message: Scaled up replica set go-app-697df4b455 to 1
-metadata:
-  creationTimestamp: "2023-11-02T06:50:24Z"
-  name: go-app.1793bbaa5de67406
-  namespace: default
-reason: ScalingReplicaSet
-reportingComponent: ""
-reportingInstance: ""
-source:
-  component: deployment-controller
 type: Normal

@@ -1,25 +1,24 @@
-apiVersion: v1
-count: 1
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-11-02T06:39:47Z"
+deprecatedLastTimestamp: "2023-11-02T06:39:47Z"
+deprecatedSource:
+  component: project-controller-manager-649894599c-kz855_83e506c3-1659-484d-8eb5-f6c85ec0d559
 eventTime: null
-firstTimestamp: "2023-11-02T06:39:47Z"
-involvedObject:
+kind: Event
+metadata:
+  creationTimestamp: "2023-11-02T06:39:47Z"
+  name: f4bd82be.demo.kcd.io.1793bb160c611e1b
+  namespace: project-system
+note: project-controller-manager-649894599c-kz855_83e506c3-1659-484d-8eb5-f6c85ec0d559
+  became leader
+reason: LeaderElection
+regarding:
   apiVersion: coordination.k8s.io/v1
   kind: Lease
   name: f4bd82be.demo.kcd.io
   namespace: project-system
   resourceVersion: "760306"
   uid: 973b25ad-2cd6-466e-b070-2a5c5914f8ec
-kind: Event
-lastTimestamp: "2023-11-02T06:39:47Z"
-message: project-controller-manager-649894599c-kz855_83e506c3-1659-484d-8eb5-f6c85ec0d559
-  became leader
-metadata:
-  creationTimestamp: "2023-11-02T06:39:47Z"
-  name: f4bd82be.demo.kcd.io.1793bb160c611e1b
-  namespace: project-system
-reason: LeaderElection
-reportingComponent: project-controller-manager-649894599c-kz855_83e506c3-1659-484d-8eb5-f6c85ec0d559
-reportingInstance: ""
-source:
-  component: project-controller-manager-649894599c-kz855_83e506c3-1659-484d-8eb5-f6c85ec0d559
+reportingController: project-controller-manager-649894599c-kz855_83e506c3-1659-484d-8eb5-f6c85ec0d559
 type: Normal

@@ -1,24 +1,22 @@
-apiVersion: v1
-count: 1
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-11-02T06:50:25Z"
+deprecatedLastTimestamp: "2023-11-02T06:50:25Z"
+deprecatedSource:
+  component: replicaset-controller
 eventTime: null
-firstTimestamp: "2023-11-02T06:50:25Z"
-involvedObject:
+kind: Event
+metadata:
+  creationTimestamp: "2023-11-02T06:50:25Z"
+  name: go-app-5d98fdf646.1793bbaa9ffefa29
+  namespace: default
+note: 'Deleted pod: go-app-5d98fdf646-t7vsp'
+reason: SuccessfulDelete
+regarding:
   apiVersion: apps/v1
   kind: ReplicaSet
   name: go-app-5d98fdf646
   namespace: default
   resourceVersion: "761082"
   uid: 27060782-bafb-4721-a3a5-1e585b40dd12
-kind: Event
-lastTimestamp: "2023-11-02T06:50:25Z"
-message: 'Deleted pod: go-app-5d98fdf646-t7vsp'
-metadata:
-  creationTimestamp: "2023-11-02T06:50:25Z"
-  name: go-app-5d98fdf646.1793bbaa9ffefa29
-  namespace: default
-reason: SuccessfulDelete
-reportingComponent: ""
-reportingInstance: ""
-source:
-  component: replicaset-controller
 type: Normal
