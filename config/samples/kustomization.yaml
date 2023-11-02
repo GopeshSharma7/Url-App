@@ -1,4 +1,0 @@
-## Append samples of your project ##
-resources:
-- demo_v1_urlresource1.yaml
-#+kubebuilder:scaffold:manifestskustomizesamples
