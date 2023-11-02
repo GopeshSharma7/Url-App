@@ -1,19 +1,8 @@
-apiVersion: events.k8s.io/v1
-deprecatedCount: 3923
-deprecatedFirstTimestamp: "2023-10-27T08:19:55Z"
-deprecatedLastTimestamp: "2023-11-02T07:41:00Z"
-deprecatedSource:
-  component: kubelet
-  host: minikube
+apiVersion: v1
+count: 3923
 eventTime: null
-kind: Event
-metadata:
-  creationTimestamp: "2023-10-30T04:27:15Z"
-  name: urlcontroller-controller-manager-6584756fdd-w4ws2.1791e9114da7b06d
-  namespace: urlcontroller-system
-note: Back-off restarting failed container manager in pod urlcontroller-controller-manager-6584756fdd-w4ws2_urlcontroller-system(07529bad-3160-4fa8-a8ae-9885334dd131)
-reason: BackOff
-regarding:
+firstTimestamp: "2023-10-27T08:19:55Z"
+involvedObject:
   apiVersion: v1
   fieldPath: spec.containers{manager}
   kind: Pod
@@ -21,4 +10,17 @@ regarding:
   namespace: urlcontroller-system
   resourceVersion: "671840"
   uid: 07529bad-3160-4fa8-a8ae-9885334dd131
+kind: Event
+lastTimestamp: "2023-11-02T07:41:00Z"
+message: Back-off restarting failed container manager in pod urlcontroller-controller-manager-6584756fdd-w4ws2_urlcontroller-system(07529bad-3160-4fa8-a8ae-9885334dd131)
+metadata:
+  creationTimestamp: "2023-10-30T04:27:15Z"
+  name: urlcontroller-controller-manager-6584756fdd-w4ws2.1791e9114da7b06d
+  namespace: urlcontroller-system
+reason: BackOff
+reportingComponent: ""
+reportingInstance: ""
+source:
+  component: kubelet
+  host: minikube
 type: Warning
