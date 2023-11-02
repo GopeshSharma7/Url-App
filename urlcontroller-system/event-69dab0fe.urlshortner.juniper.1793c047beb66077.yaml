@@ -1,25 +1,24 @@
-apiVersion: v1
-count: 1
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-11-02T08:14:58Z"
+deprecatedLastTimestamp: "2023-11-02T08:14:58Z"
+deprecatedSource:
+  component: urlcontroller-controller-manager-6584756fdd-w4ws2_e7164e5b-73e1-4210-9f33-f4bc044f845b
 eventTime: null
-firstTimestamp: "2023-11-02T08:14:58Z"
-involvedObject:
+kind: Event
+metadata:
+  creationTimestamp: "2023-11-02T08:14:58Z"
+  name: 69dab0fe.urlshortner.juniper.1793c047beb66077
+  namespace: urlcontroller-system
+note: urlcontroller-controller-manager-6584756fdd-w4ws2_e7164e5b-73e1-4210-9f33-f4bc044f845b
+  became leader
+reason: LeaderElection
+regarding:
   apiVersion: coordination.k8s.io/v1
   kind: Lease
   name: 69dab0fe.urlshortner.juniper
   namespace: urlcontroller-system
   resourceVersion: "766839"
   uid: df537228-fad1-4aa0-b7b1-16a00f26f8d1
-kind: Event
-lastTimestamp: "2023-11-02T08:14:58Z"
-message: urlcontroller-controller-manager-6584756fdd-w4ws2_e7164e5b-73e1-4210-9f33-f4bc044f845b
-  became leader
-metadata:
-  creationTimestamp: "2023-11-02T08:14:58Z"
-  name: 69dab0fe.urlshortner.juniper.1793c047beb66077
-  namespace: urlcontroller-system
-reason: LeaderElection
-reportingComponent: urlcontroller-controller-manager-6584756fdd-w4ws2_e7164e5b-73e1-4210-9f33-f4bc044f845b
-reportingInstance: ""
-source:
-  component: urlcontroller-controller-manager-6584756fdd-w4ws2_e7164e5b-73e1-4210-9f33-f4bc044f845b
+reportingController: urlcontroller-controller-manager-6584756fdd-w4ws2_e7164e5b-73e1-4210-9f33-f4bc044f845b
 type: Normal
