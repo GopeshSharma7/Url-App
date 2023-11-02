@@ -9,4 +9,4 @@ spec:
   holderIdentity: project-controller-manager-649894599c-kz855_637ad1f2-0880-4feb-a646-c1764fb575ed
   leaseDurationSeconds: 15
   leaseTransitions: 395
-  renewTime: "2023-11-02T08:39:55.285539Z"
+  renewTime: "2023-11-02T08:40:05.377874Z"
