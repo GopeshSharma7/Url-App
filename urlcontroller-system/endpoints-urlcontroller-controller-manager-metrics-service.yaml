@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Endpoints
 metadata:
   annotations:
-    endpoints.kubernetes.io/last-change-trigger-time: "2023-11-02T06:30:51Z"
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-11-02T06:32:58Z"
   creationTimestamp: "2023-10-11T06:22:25Z"
   labels:
     app.kubernetes.io/component: kube-rbac-proxy
@@ -15,7 +15,7 @@ metadata:
   name: urlcontroller-controller-manager-metrics-service
   namespace: urlcontroller-system
 subsets:
-- addresses:
+- notReadyAddresses:
   - ip: 10.244.0.81
     nodeName: minikube
     targetRef:
