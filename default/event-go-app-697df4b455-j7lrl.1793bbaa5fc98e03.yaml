@@ -1,23 +1,23 @@
 action: Binding
-apiVersion: events.k8s.io/v1
-deprecatedFirstTimestamp: null
-deprecatedLastTimestamp: null
-deprecatedSource: {}
+apiVersion: v1
 eventTime: "2023-11-02T06:50:24.874676Z"
-kind: Event
-metadata:
-  creationTimestamp: "2023-11-02T06:50:24Z"
-  name: go-app-697df4b455-j7lrl.1793bbaa5fc98e03
-  namespace: default
-note: Successfully assigned default/go-app-697df4b455-j7lrl to minikube
-reason: Scheduled
-regarding:
+firstTimestamp: null
+involvedObject:
   apiVersion: v1
   kind: Pod
   name: go-app-697df4b455-j7lrl
   namespace: default
   resourceVersion: "761066"
   uid: c66b1aaa-d693-4cc3-b940-8a7a7a58da31
-reportingController: default-scheduler
+kind: Event
+lastTimestamp: null
+message: Successfully assigned default/go-app-697df4b455-j7lrl to minikube
+metadata:
+  creationTimestamp: "2023-11-02T06:50:24Z"
+  name: go-app-697df4b455-j7lrl.1793bbaa5fc98e03
+  namespace: default
+reason: Scheduled
+reportingComponent: default-scheduler
 reportingInstance: default-scheduler-minikube
+source: {}
 type: Normal
