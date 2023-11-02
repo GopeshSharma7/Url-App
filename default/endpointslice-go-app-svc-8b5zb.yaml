@@ -2,7 +2,7 @@ addressType: IPv4
 apiVersion: discovery.k8s.io/v1
 endpoints:
 - addresses:
-  - 10.244.0.89
+  - 10.244.0.90
   conditions:
     ready: true
     serving: true
@@ -10,13 +10,13 @@ endpoints:
   nodeName: minikube
   targetRef:
     kind: Pod
-    name: go-app-5d98fdf646-t7vsp
+    name: go-app-697df4b455-j7lrl
     namespace: default
-    uid: 4990fbea-7588-4a0b-aea2-d96dd8068047
+    uid: c66b1aaa-d693-4cc3-b940-8a7a7a58da31
 kind: EndpointSlice
 metadata:
   annotations:
-    endpoints.kubernetes.io/last-change-trigger-time: "2023-10-31T08:40:54Z"
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-11-02T06:50:26Z"
   creationTimestamp: "2023-10-31T07:09:41Z"
   generateName: go-app-svc-
   labels:

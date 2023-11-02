@@ -19,7 +19,7 @@ metadata:
     name: go-app
     uid: e4f66a27-c56d-431d-a506-d920c0587721
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: go-app
