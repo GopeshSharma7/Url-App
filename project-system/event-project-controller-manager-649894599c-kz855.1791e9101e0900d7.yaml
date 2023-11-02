@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 4137
+deprecatedCount: 4152
 deprecatedFirstTimestamp: "2023-10-27T08:19:49Z"
-deprecatedLastTimestamp: "2023-11-02T08:35:57Z"
+deprecatedLastTimestamp: "2023-11-02T08:41:04Z"
 deprecatedSource:
   component: kubelet
   host: minikube
