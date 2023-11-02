@@ -1,0 +1,31 @@
+# permissions for end users to edit urlresource1s.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: urlresource1-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: project1
+    app.kubernetes.io/part-of: project1
+    app.kubernetes.io/managed-by: kustomize
+  name: urlresource1-editor-role
+rules:
+- apiGroups:
+  - demo.demo.kcd.io
+  resources:
+  - urlresource1s
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - demo.demo.kcd.io
+  resources:
+  - urlresource1s/status
+  verbs:
+  - get
