@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 211
+deprecatedFirstTimestamp: "2023-10-27T08:17:30Z"
+deprecatedLastTimestamp: "2023-11-02T05:30:56Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-11-01T00:59:00Z"
+  name: urlcontroller-controller-manager-6584756fdd-w4ws2.1791e8efc3bb3ab0
+  namespace: urlcontroller-system
+note: Pulling image "sharmag07/controller:latest"
+reason: Pulling
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{manager}
+  kind: Pod
+  name: urlcontroller-controller-manager-6584756fdd-w4ws2
+  namespace: urlcontroller-system
+  resourceVersion: "671840"
+  uid: 07529bad-3160-4fa8-a8ae-9885334dd131
+type: Normal

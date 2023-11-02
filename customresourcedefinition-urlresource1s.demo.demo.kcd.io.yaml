@@ -1,0 +1,65 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.13.0
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apiextensions.k8s.io/v1","kind":"CustomResourceDefinition","metadata":{"annotations":{"controller-gen.kubebuilder.io/version":"v0.13.0"},"name":"urlresource1s.demo.demo.kcd.io"},"spec":{"group":"demo.demo.kcd.io","names":{"kind":"UrlResource1","listKind":"UrlResource1List","plural":"urlresource1s","singular":"urlresource1"},"scope":"Namespaced","versions":[{"name":"v1","schema":{"openAPIV3Schema":{"description":"UrlResource1 is the Schema for the urlresource1s API","properties":{"apiVersion":{"description":"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources","type":"string"},"kind":{"description":"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds","type":"string"},"metadata":{"type":"object"},"spec":{"description":"UrlResource1Spec defines the desired state of UrlResource1","properties":{"targetURLs":{"description":"Foo is an example field of UrlResource1. Edit urlresource1_types.go to remove/update TargetURL string `json:\"targetURL\"`","items":{"type":"string"},"type":"array"}},"type":"object"},"status":{"description":"UrlResource1Status defines the observed state of UrlResource1","properties":{"shortURL":{"additionalProperties":{"type":"string"},"description":"INSERT ADDITIONAL STATUS FIELD - define observed state of cluster Important: Run \"make\" to regenerate code after modifying this file ShortURL string `json:\"shortURL\"`","type":"object"}},"required":["shortURL"],"type":"object"}},"type":"object"}},"served":true,"storage":true,"subresources":{"status":{}}}]}}
+  creationTimestamp: "2023-10-19T11:21:45Z"
+  name: urlresource1s.demo.demo.kcd.io
+spec:
+  conversion:
+    strategy: None
+  group: demo.demo.kcd.io
+  names:
+    kind: UrlResource1
+    listKind: UrlResource1List
+    plural: urlresource1s
+    singular: urlresource1
+  scope: Namespaced
+  versions:
+  - name: v1
+    schema:
+      openAPIV3Schema:
+        description: UrlResource1 is the Schema for the urlresource1s API
+        properties:
+          apiVersion:
+            description: 'APIVersion defines the versioned schema of this representation
+              of an object. Servers should convert recognized schemas to the latest
+              internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            type: string
+          kind:
+            description: 'Kind is a string value representing the REST resource this
+              object represents. Servers may infer this from the endpoint the client
+              submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: UrlResource1Spec defines the desired state of UrlResource1
+            properties:
+              targetURLs:
+                description: Foo is an example field of UrlResource1. Edit urlresource1_types.go
+                  to remove/update TargetURL string `json:"targetURL"`
+                items:
+                  type: string
+                type: array
+            type: object
+          status:
+            description: UrlResource1Status defines the observed state of UrlResource1
+            properties:
+              shortURL:
+                additionalProperties:
+                  type: string
+                description: 'INSERT ADDITIONAL STATUS FIELD - define observed state
+                  of cluster Important: Run "make" to regenerate code after modifying
+                  this file ShortURL string `json:"shortURL"`'
+                type: object
+            required:
+            - shortURL
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}

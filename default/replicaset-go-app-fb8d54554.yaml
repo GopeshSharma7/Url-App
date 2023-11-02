@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  annotations:
+    deployment.kubernetes.io/desired-replicas: "1"
+    deployment.kubernetes.io/max-replicas: "2"
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2023-10-31T07:09:41Z"
+  labels:
+    app: go-app
+    pod-template-hash: fb8d54554
+  name: go-app-fb8d54554
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Deployment
+    name: go-app
+    uid: e4f66a27-c56d-431d-a506-d920c0587721
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: go-app
+      pod-template-hash: fb8d54554
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: go-app
+        pod-template-hash: fb8d54554
+    spec:
+      containers:
+      - image: sharmag07/url-short:a2
+        imagePullPolicy: IfNotPresent
+        name: go-app
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 600m
+            memory: 128Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30

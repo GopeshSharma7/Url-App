@@ -1,0 +1,46 @@
+addressType: IPv4
+apiVersion: discovery.k8s.io/v1
+endpoints:
+- addresses:
+  - 10.244.0.84
+  conditions:
+    ready: true
+    serving: true
+    terminating: false
+  nodeName: minikube
+  targetRef:
+    kind: Pod
+    name: coredns-5d78c9869d-tm77f
+    namespace: kube-system
+    uid: 55e0e3c9-3c23-4b06-a46b-25d269e9736c
+kind: EndpointSlice
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-09-01T13:06:14Z"
+  creationTimestamp: "2023-09-01T13:06:28Z"
+  generateName: kube-dns-
+  labels:
+    endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+    k8s-app: kube-dns
+    kubernetes.io/cluster-service: "true"
+    kubernetes.io/name: CoreDNS
+    kubernetes.io/service-name: kube-dns
+  name: kube-dns-9wnx8
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Service
+    name: kube-dns
+    uid: f139db12-6cd1-4b4f-bb76-6719eaa1fdd9
+ports:
+- name: metrics
+  port: 9153
+  protocol: TCP
+- name: dns
+  port: 53
+  protocol: UDP
+- name: dns-tcp
+  port: 53
+  protocol: TCP

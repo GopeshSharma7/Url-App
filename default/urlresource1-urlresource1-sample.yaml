@@ -1,0 +1,20 @@
+apiVersion: demo.demo.kcd.io/v1
+kind: UrlResource1
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"demo.demo.kcd.io/v1","kind":"UrlResource1","metadata":{"annotations":{},"labels":{"app.kubernetes.io/created-by":"project1","app.kubernetes.io/instance":"urlresource1-sample","app.kubernetes.io/managed-by":"kustomize","app.kubernetes.io/name":"urlresource1","app.kubernetes.io/part-of":"project1"},"name":"urlresource1-sample","namespace":"default"},"spec":{"targetURLs":["https://www.hosting.co.uk/pro-services/?/post/2021/12/08/$5982-!","https://www.flipkart.com/mobile-phones-store","https://www.amazon.in/mobile-phones/b?ie=UTF8\u0026node=1389401031"]}}
+  creationTimestamp: "2023-10-31T06:58:56Z"
+  labels:
+    app.kubernetes.io/created-by: project1
+    app.kubernetes.io/instance: urlresource1-sample
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: urlresource1
+    app.kubernetes.io/part-of: project1
+  name: urlresource1-sample
+  namespace: default
+spec:
+  targetURLs:
+  - https://www.hosting.co.uk/pro-services/?/post/2021/12/08/$5982-!
+  - https://www.flipkart.com/mobile-phones-store
+  - https://www.amazon.in/mobile-phones/b?ie=UTF8&node=1389401031

@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 4
+deprecatedFirstTimestamp: "2023-10-30T08:34:28Z"
+deprecatedLastTimestamp: "2023-11-02T06:18:06Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-11-02T06:18:06Z"
+  name: urlcontroller-controller-manager-6584756fdd-w4ws2.1792d59a57ce7658
+  namespace: urlcontroller-system
+note: 'Liveness probe failed: Get "http://10.244.0.81:8081/healthz": dial tcp 10.244.0.81:8081:
+  connect: connection refused'
+reason: Unhealthy
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{manager}
+  kind: Pod
+  name: urlcontroller-controller-manager-6584756fdd-w4ws2
+  namespace: urlcontroller-system
+  resourceVersion: "671840"
+  uid: 07529bad-3160-4fa8-a8ae-9885334dd131
+type: Warning

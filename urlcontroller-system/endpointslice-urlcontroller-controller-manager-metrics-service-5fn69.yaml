@@ -1,0 +1,44 @@
+addressType: IPv4
+apiVersion: discovery.k8s.io/v1
+endpoints:
+- addresses:
+  - 10.244.0.81
+  conditions:
+    ready: true
+    serving: true
+    terminating: false
+  nodeName: minikube
+  targetRef:
+    kind: Pod
+    name: urlcontroller-controller-manager-6584756fdd-w4ws2
+    namespace: urlcontroller-system
+    uid: 07529bad-3160-4fa8-a8ae-9885334dd131
+kind: EndpointSlice
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-11-02T06:23:21Z"
+  creationTimestamp: "2023-10-11T06:22:25Z"
+  generateName: urlcontroller-controller-manager-metrics-service-
+  labels:
+    app.kubernetes.io/component: kube-rbac-proxy
+    app.kubernetes.io/created-by: urlcontroller
+    app.kubernetes.io/instance: controller-manager-metrics-service
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: service
+    app.kubernetes.io/part-of: urlcontroller
+    control-plane: controller-manager
+    endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+    kubernetes.io/service-name: urlcontroller-controller-manager-metrics-service
+  name: urlcontroller-controller-manager-metrics-service-5fn69
+  namespace: urlcontroller-system
+  ownerReferences:
+  - apiVersion: v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Service
+    name: urlcontroller-controller-manager-metrics-service
+    uid: 41bb124c-2a5f-42cf-9313-759a63e441eb
+ports:
+- name: https
+  port: 8443
+  protocol: TCP
